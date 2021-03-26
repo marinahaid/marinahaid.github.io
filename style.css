@@ -661,6 +661,10 @@ a {
     padding: 0 0 50px
 }
 
+.about-me__wrap {
+  padding-bottom: 70px;
+}
+
 .about-me__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -717,6 +721,10 @@ a {
         flex-direction: column
     }
 
+    .about-me__wrap {
+      padding-bottom: 50px;
+    }
+    
     .about-me h1 {
         max-width: 200px;
         margin: 0 auto;
