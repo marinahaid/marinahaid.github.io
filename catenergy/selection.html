@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="./fonts/oswald-v31-latin_cyrillic-regular.woff" as="font">
+    <link rel="preload" href="./fonts/oswald-v31-latin_cyrillic-regular.woff2" as="font">
+    <title>Кэт энерджи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="selection">
+    <header class="page-header">
+        <div class="page-header__wrapper"><a class="page-header__logo">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"><img class="page-header__logo-image"
+                        src="img/logo-mobile.svg" width="191" height="39" alt="Кот Энереджи">
+                </picture>
+            </a>
+            <nav class="main-nav main-nav--closed main-nav--nojs"><button class="main-nav__toggle" type="button"><span
+                        class="visually-hidden">Открыть меню</span></button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a>
+                        </li>
+                        <li class="site-list__item site-list__item--active"><a class="site-list__link" href="#">Подбор
+                                программы</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-form">
+            <form class="main-form__appointment-form" id="appointment-button" action="https://echo.htmlacademy.ru"
+                method="post">
+                <section class="info">
+                    <h2 class="info__title">Подбор программы</h2>
+                    <p class="info__text-write">Заполните анкету и мы подберем программу питания для вашего кота</p>
+                </section>
+                <section>
+                    <h3 class="visually-hidden">Форма для заполнения личных данных</h3>
+                    <div class="form-block">
+                        <ul class="form-block__features-list">
+                            <li class="form-block__features-item"><label class="form-block__label"
+                                    for="appointment-name">Имя:*</label> <input
+                                    class="appointment-place form-block__input require" id="appointment-name"
+                                    type="text" name="name" placeholder="Барсик"></li>
+                            <li class="form-block__features-item"><label class="form-block__label"
+                                    for="appointment-weight">Вес&nbsp;(кг):*</label> <input
+                                    class="form-block__input require" id="appointment-weight" type="text" name="email"
+                                    placeholder="7"></li>
+                            <li class="form-block__features-item"><label class="form-block__label"
+                                    for="appointment-age">Возраст&nbsp;(лет):</label> <input class="form-block__input"
+                                    id="appointment-age" type="text" name="email" placeholder="7"></li>
+                        </ul>
+                        <div class="form-block__correction">
+                            <h3 class="visually-hidden">Фильтр коррекции веса</h3>
+                            <fieldset class="correction">
+                                <ul class="correction__filter-list">
+                                    <li class="correction__filter-option filter-option"><input
+                                            class="visually-hidden filter-input filter-input-radio filter-option__input"
+                                            type="radio" name="weight-group" value="lose" id="lose" checked=""> <label
+                                            class="filter-option__radio" for="lose">Похудение</label></li>
+                                    <li class="correction__filter-option filter-option"><input
+                                            class="visually-hidden filter-input filter-input-radio filter-option__input"
+                                            type="radio" name="weight-group" value="increase" id="increase"> <label
+                                            class="filter-option__radio" for="increase">Набор массы</label></li>
+                                    <li class="correction__filter-option filter-option"><input
+                                            class="visually-hidden filter-input filter-input-radio filter-option__input"
+                                            type="radio" name="weight-group" value="advice" id="advice"> <label
+                                            class="filter-option__radio" for="advice">Не знаю (Нужен ваш совет)</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact">
+                    <div class="contact__form green-borded">
+                        <h2 class="green-borded__title"><span class="green-borded__text">Контактные данные (владельца
+                                кота)</span></h2>
+                    </div>
+                    <ul class="contact__list">
+                        <li class="contact__item complex-input"><label class="complex-input__label"
+                                for="evidence-email">E&#8209;mail:*</label>
+                            <div class="complex-input__wrap"><input class="complex-input__input require"
+                                    id="evidence-email" type="text" name="email" placeholder="kuklachev@gmail.com"> <svg
+                                    class="complex-input__icon complex-input__icon--email">
+                                    <use xlink:href="./img/sprite.svg#icon-email"></use>
+                                </svg></div>
+                        </li>
+                        <li class="contact__item complex-input"><label class="complex-input__label"
+                                for="evidence-phone">Телефон:*</label>
+                            <div class="complex-input__wrap"><input class="complex-input__input icon--phone require"
+                                    id="evidence-phone" type="text" name="name" placeholder="8 (960) 900-60-90"> <svg
+                                    class="complex-input__icon complex-input__icon--phone">
+                                    <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                                </svg></div>
+                        </li>
+                    </ul>
+                    <div class="contact__comments">
+                        <div class="contact__form green-borded">
+                            <h2 class="green-borded__title"><span class="green-borded__text">Комментарий</span></h2>
+                        </div>
+                        <div class="contact__comments-item"><textarea class="contact__area" id="evidence-letter"
+                                name="text" placeholder="Расскажите обо всех повадках кота"></textarea></div>
+                    </div>
+                </section>
+                <div class="offers">
+                    <div class="contact__form green-borded">
+                        <h2 class="green-borded__title"><span class="green-borded__text">Дополнительно</span></h2>
+                    </div>
+                    <div class="offers__wrap">
+                        <fieldset class="offers__container-site check-bottom">
+                            <ul class="offers__filter-list">
+                                <li class="offers__filter-option filter-option"><input
+                                        class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                        name="different" id="deputy" value="deputy-check" checked=""> <label
+                                        class="filter-option__check" for="deputy">Сахарозаменитель</label></li>
+                                <li class="offers__filter-option filter-option"><input
+                                        class="visually-hidden filter-input filter-input-checkbox filter-option__input"
+                                        type="checkbox" name="different" value="advantages-check" id="box-advantage">
+                                    <label class="filter-option__check" for="box-advantage">Питьевая вода</label>
+                                </li>
+                                <li class="offers__filter-option filter-option"><input
+                                        class="visually-hidden filter-input filter-input-checkbox filter-option__input"
+                                        type="checkbox" name="different" value="news-check" id="news"> <label
+                                        class="filter-option__check" for="news">Молоко</label></li>
+                                <li class="offers__filter-option filter-option"><input
+                                        class="visually-hidden filter-input filter-input-checkbox filter-option__input"
+                                        type="checkbox" name="different" value="gallery-check" id="gallery"> <label
+                                        class="filter-option__check" for="gallery">Витамины</label></li>
+                            </ul>
+                        </fieldset>
+                        <div class="offers__bottom"><button class="offers__selection-button button"
+                                type="submit">Отправить заявку</button>
+                            <p class="offers__necessary">* — Обязательные поля</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__contacts footer-contacts">
+            <p class="footer-contacts__invite">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            <address class="footer-contacts__text">
+                <p class="footer-contacts__street">ул. Большая Конюшенная, д. 19/8</p>
+                <p class="footer-contacts__city">Санкт-Петербург</p>
+            </address>
+        </div>
+        <div class="page-footer__map"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6194872569642!2d30.32110961580951!3d59.938455981876125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2spl!4v1589659186789!5m2!1sru!2spl"
+                width="600" height="400" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="page-footer__social">
+            <div class="page-footer__container"><a class="page-footer__link-logo" href="#"><img
+                        class="page-footer__social-logo" src="img/footer-logo-svg.svg" width="128" height="24"
+                        alt="Логотип сайта кот энерджи"></a>
+                <div class="page-footer__icon-social-wrapper">
+                    <ul class="icon-social">
+                        <li class="icon-social__icon-item"><a class="social-button" href="#"><span
+                                    class="visually-hidden">ВКонтакте</span> <svg class="social-button-icon button--vk">
+                                    <use xlink:href="./img/sprite.svg#vk"></use>
+                                </svg></a></li>
+                        <li class="icon-social__icon-item"><a class="social-button" href="#"><span
+                                    class="visually-hidden">Инстаграм</span> <svg
+                                    class="social-button-icon button--insta">
+                                    <use xlink:href="./img/sprite.svg#insta"></use>
+                                </svg></a></li>
+                        <li class="icon-social__icon-item"><a class="social-button" href="#"><span
+                                    class="visually-hidden">Фейсбук</span> <svg class="social-button-icon button--fb">
+                                    <use xlink:href="./img/sprite.svg#fb"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="copyright"><a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML
+                        Academy </a><a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span
+                            class="visually-hidden">Логотип Эйч ти эм эл акдемии</span> <svg
+                            class="copyright__link-logo" width="27" height="34">
+                            <use xlink:href="./img/sprite.svg#copyright"></use>
+                        </svg></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
