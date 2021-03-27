@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Pink</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>document.createElement("picture");</script>
+    <script src="./js/vendor/picturefill.js" async=""></script>
+</head>
+
+<body class="photos">
+    <header class="page-header">
+        <div class="page-header__wrapper"><a class="page-header__logo" href="/">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/logotype-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logotype-tablet.svg"><img
+                        class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22"
+                        alt="Логотип Пинк">
+                </picture>
+            </a>
+            <nav class="main-nav main-nav--closed main-nav--nojs"><button class="main-nav__toggle" type="button"><span
+                        class="visually-hidden">Открыть меню</span></button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item"></li>
+                        <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="photo.html">Фотографии</a></li>
+                        <li class="site-list__item site-list__item--active"><a class="site-list__link"
+                                href="form.html">Конкурс</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="Academy.html">HTML Academy</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main-box">
+        <section class="form-top">
+            <div class="form-top__img">
+                <h2 class="form-top__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+            </div>
+        </section>
+        <div class="form-box"><span class="form-box__one">Поделитесь своей историей и получите шанс выиграть ценный приз
+                — 1000 миль на вашу бонусную карту!</span> <span class="form-box__two">Пожалуйста, заполните форму
+                ниже:</span></div>
+        <div class="main-form">
+            <form class="main-form__appointment-form" id="appointment-button" action="https://echo.htmlacademy.ru"
+                method="post">
+                <section class="base">
+                    <h3 class="visually-hidden">Форма для заполнения личных данных</h3>
+                    <ul class="base__features-list form-list">
+                        <li class="base__features-item form-complex-item"><label class="base__label form-label"
+                                for="appointment-name">Фамилия:</label> <input class="base__input form-input require"
+                                id="appointment-name" type="text" name="name" placeholder="Укажите фамилию *"></li>
+                        <li class="base__features-item form-complex-item"><label class="base__label form-label"
+                                for="appointment-weight">Имя:</label> <input class="base__input form-input require"
+                                id="appointment-weight" type="text" name="email" placeholder="Введите ваше имя *"></li>
+                        <li class="base__features-item form-complex-item"><label class="base__label form-label"
+                                for="appointment-age">Отчество:</label> <input class="base__input form-input"
+                                id="appointment-age" type="text" name="email" placeholder="Ну и отчество тоже"></li>
+                    </ul>
+                </section>
+                <section class="progress">
+                    <h3 class="progress__title border-title">Ваши безбашенные достижения в путешествии</h3>
+                    <!-- <div class="progress__container filter-box">-->
+                    <ul class="progress__filter-list border-list">
+                        <li class="progress__filter-option filter-option filter-option--one"><input
+                                class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                name="different" id="selfie" value="selfie-check" checked=""> <label
+                                class="filter-option__check" for="selfie">Сделал селфи с акулой</label></li>
+                        <li class="progress__filter-option filter-option filter-option--two"><input
+                                class="visually-hidden filter-input filter-input-checkbox filter-option__input"
+                                type="checkbox" name="different" value="suntan-check" id="suntan" checked=""> <label
+                                class="filter-option__check" for="suntan">Обгорел на пляже</label></li>
+                        <li class="progress__filter-option filter-option filter-option--three"><input
+                                class="visually-hidden filter-input filter-input-checkbox filter-option__input"
+                                type="checkbox" name="different" value="actor-check" id="actor"> <label
+                                class="filter-option__check" for="actor">Видел Чака Норриса</label></li>
+                        <li class="progress__filter-option filter-option filter-option--four"><input
+                                class="visually-hidden filter-input filter-input-checkbox filter-option__input"
+                                type="checkbox" name="different" value="buy-check" id="buy"> <label
+                                class="filter-option__check" for="buy">Накупил сувениров</label></li>
+                        <li class="progress__filter-option filter-option filter-option--five"><input
+                                class="visually-hidden filter-input filter-input-checkbox filter-option__input"
+                                type="checkbox" name="different" value="tower-check" id="tower" checked=""> <label
+                                class="filter-option__check" for="tower">Удержал башню</label></li>
+                        <li class="progress__filter-option filter-option filter-option--six"><input
+                                class="visually-hidden filter-input filter-input-checkbox filter-option__input"
+                                type="checkbox" name="different" value="hotel-check" id="hotel"> <label
+                                class="filter-option__check" for="hotel">Разгромил отель</label></li>
+                    </ul><!--  </div>-->
+                </section>
+                <section class="data">
+                    <h3 class="data__title border-title">Контактная информация</h3>
+                    <ul class="data__list form-list border-list">
+                        <li class="data__item">
+                            <!-- <li class="data__item complex-input form-complex-item">--> <label
+                                class="data__label form-label" for="evidence-phone">Номер телефона</label>
+                            <div class="data__wrap"><input class="data__input form-input require" id="evidence-phone"
+                                    type="text" name="name" placeholder="Номер, пожалуйста">
+                                <div class="complex-sqwuare"><svg class="complex-input__icon complex-input__icon-phone">
+                                        <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                                    </svg></div>
+                            </div>
+                        </li>
+                        <li class="data__item">
+                            <!--<li class="data__item complex-input form-complex-item">--> <label
+                                class="data__label form-label" for="evidence-email">Адрес почты</label>
+                            <div class="data__wrap"><input class="data__input form-input require" id="evidence-email"
+                                    type="text" name="email" placeholder="Введите почту *">
+                                <div class="complex-sqwuare"><svg class="complex-input__icon complex-input__icon-email">
+                                        <use xlink:href="./img/sprite.svg#icon-email"></use>
+                                    </svg></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="system">
+                    <h3 class="system__title border-title">С каким приложением путешествовали?</h3>
+                    <!--  <div class="system__container filter-box ">-->
+                    <ul class="system__filter-list border-list">
+                        <li class="system__filter-option filter-option"><input
+                                class="visually-hidden filter-input filter-input-radio filter-option__input"
+                                type="radio" name="system-group" value="ios" id="ios" checked=""> <label
+                                class="filter-option__radio" for="ios">Pink для iOS</label></li>
+                        <li class="system__filter-option filter-option"><input
+                                class="visually-hidden filter-input filter-input-radio filter-option__input"
+                                type="radio" name="system-group" value="android" id="android"> <label
+                                class="filter-option__radio" for="android">Pink на Android</label></li>
+                        <li class="system__filter-option filter-option"><input
+                                class="visually-hidden filter-input filter-input-radio filter-option__input"
+                                type="radio" name="system-group" value="windows" id="windows"> <label
+                                class="filter-option__radio" for="windows">Windows Phone</label></li>
+                    </ul><!-- </div>-->
+                </section>
+                <section class="description">
+                    <h3 class="description__title border-title">Опишите свои эмоции</h3>
+                    <div class="description__item border-list"><textarea class="description__area" id="evidence-letter"
+                            name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea></div>
+                    <div class="description__bottom"><button class="description__selection-button button"
+                            type="submit">Отправить форму</button>
+                        <p class="description__necessary"><span class="star">*</span>— Обязательные поля</p>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__social">
+            <div class="page-footer__container-social"><a class="page-footer__logo" href="#">
+                    <picture>
+                        <source media="(min-width: 960px)" srcset="img/logotype-blue-desktop.svg"><img
+                            class="page-footer__logo-img" src="img/logotype-blue-tablet.svg" width="147" height="40"
+                            alt="Логотип сайта Пинк">
+                    </picture>
+                </a>
+                <div class="page-footer__icon-social-wrapper">
+                    <ul class="icon-social">
+                        <li class="icon-social__icon-item"><a class="social-button" href="#"><span
+                                    class="visually-hidden">Твиттер</span> <svg
+                                    class="social-button-icon social-button-icon--twitter">
+                                    <use xlink:href="./img/sprite.svg#twitter"></use>
+                                </svg></a></li>
+                        <li class="icon-social__icon-item"><a class="social-button" href="#"><span
+                                    class="visually-hidden">Фейсбук</span> <svg
+                                    class="social-button-icon social-button-icon--fb">
+                                    <use xlink:href="./img/sprite.svg#fb"></use>
+                                </svg></a></li>
+                        <li class="icon-social__icon-item"><a class="social-button" href="#"><span
+                                    class="visually-hidden">Ютюб</span> <svg
+                                    class="social-button-icon social-button-icon--youtube">
+                                    <use xlink:href="./img/sprite.svg#youtube"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="copyright"><a class="copyright__text"
+                        href="https://htmlacademy.ru/intensive/adaptive">Разработано</a> <a class="copyright__link"
+                        href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Логотип Эйч ти эм
+                            эл академии</span> <svg class="copyright__link-logo" width="27" height="34">
+                            <use xlink:href="./img/sprite.svg#copyright"></use>
+                        </svg></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/vendor/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

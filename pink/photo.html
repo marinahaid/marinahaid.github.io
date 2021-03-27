@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Pink</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>document.createElement("picture");</script>
+    <script src="./js/vendor/picturefill.js" async=""></script>
+</head>
+
+<body class="photos">
+    <header class="page-header header page-header--short">
+        <div class="page-header__wrapper"><a class="page-header__logo" href="/">
+                <picture>
+                    <source media="(min-width: 960px)" srcset="img/logotype-desktop.svg">
+                    <source media="(min-width: 660px)" srcset="img/logotype-tablet.svg"><img
+                        class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22"
+                        alt="Логотип Пинк">
+                </picture>
+            </a>
+            <nav class="main-nav main-nav--closed main-nav--nojs"><button class="main-nav__toggle" type="button"><span
+                        class="visually-hidden">Открыть меню</span></button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item"></li>
+                        <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+                        <li class="site-list__item site-list__item--active"><a class="site-list__link"
+                                href="photo.html">Фотографии</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="form.html">Конкурс</a></li>
+                        <li class="site-list__item"><a class="site-list__link" href="Academy.html">HTML Academy</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="visually-hidden">Фотогалерея Пинк</h1>
+        <section class="photos-top">
+            <div class="photos-top__img">
+                <h2 class="photos-top__title">Фотографии пользователей</h2>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery__title visually-hidden">Галерея фоторабот</h2>
+            <div class="gallery__container-top">
+                <p class="gallery__container-text gallery__container-text-top">Взгляните на фотографии, которые
+                    выкладывают пользователи! Видите, как не хватает ваших?</p>
+            </div>
+            <ul class="gallery__list gallery__list-top">
+                <li class="gallery__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1200px)"
+                            srcset="./img/webp/panorama-desktop.webp, ./img/webp/panorama-desktop-jpg@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)"
+                            srcset="./img/webp/panorama-tablet.webp, ./img/webp/photo-1-tablet-jpg@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="./img/webp/panorama-mobile.webp, ./img/webp/panorama-mobile-jpg@2x.webp 2x">
+                        <source media="(min-width: 1200px)"
+                            srcset="img/panorama-desktop.jpg, img/panorama-desktop-jpg@2x.jpg">
+                        <source media="(min-width: 660px)"
+                            srcset="img/panorama-tablet.jpg, img/panorama-tablet-jpg@2x.jpg"><img
+                            class="gallery__item-img gallery__item-img--one" src="img/panorama-mobile.jpg"
+                            srcset="img/panorama-mobile-jpg@2x.jpg" width="320" height="137"
+                            alt="Фотография пользователя">
+                    </picture>
+                    <div class="gallery__item-box">
+                        <div class="gallery__item-text">
+                            <div class="gallery__item-wrap">
+                                <p class="item-name">Анна</p>
+                                <p class="item-time">(5 минут назад)</p>
+                            </div>
+                            <div class="item-like-box"><a class="item-like-img" href="#"><span
+                                        class="visually-hidden">сердечко</span></a> <a class="item-like-text"
+                                    href="#">Нравится: 215</a></div>
+                            <p class="item-text item-text-one">Прыгать или нет? Напишите в комментарии свой совет и
+                                смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="gallery__list gallery__list-bottom">
+                <li class="gallery__item">
+                    <picture>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1200px)"
+                                srcset="./img/webp/photo-1-desktop.webp, ./img/webp/photo-1-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 660px)"
+                                srcset="./img/webp/photo-1-tablet.webp, ./img/webp/photo-1-tablet@2x.webp 2x">
+                            <source type="image/webp"
+                                srcset="./img/webp/photo-1-mobile..webp, ./img/webp/photo-1-mobile@2x.webp 2x">
+                            <source media="(min-width: 1200px)"
+                                srcset="img/photo-1-desktop.jpg, img/photo-1-desktop@2x.jpg">
+                            <source media="(min-width: 660px)"
+                                srcset="img/photo-1-tablet.jpg, img/photo-1-tablet@2x.jpg"><img
+                                class="gallery__item-img gallery__item-img--one" src="img/photo-1-mobile..jpg"
+                                srcset="img/photo-1-mobile@2x.jpg" width="280" height="180"
+                                alt="Фотография пользователя">
+                        </picture>
+                        <div class="gallery__item-box">
+                            <div class="gallery__item-text">
+                                <div class="gallery__item-wrap gallery__item-one">
+                                    <p class="item-name">Левон</p>
+                                    <p class="item-time">(5 часов назад)</p>
+                                </div>
+                                <div class="item-like-box"><a class="item-like-img" href="#"><span
+                                            class="visually-hidden">сердечко</span></a> <a class="item-like-text"
+                                        href="#">Нравится: 356</a></div>
+                                <p class="item-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                            </div>
+                        </div>
+                    </picture>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1200px)"
+                            srcset="./img/webp/photo-2-desktop.webp, ./img/webp/photo-2-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)"
+                            srcset="./img/webp/photo-2-tablet.webp, ./img/webp/photo-2-tablet@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="./img/webp/photo-2-mobile.webp, ./img/webp/photo-2-mobile@2x.webp 2x">
+                        <source media="(min-width: 1200px)"
+                            srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2x.jpg/">
+                        <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2x.jpg">
+                        <img class="gallery__item-img" src="/img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg"
+                            width="280" height="180" alt="Фотография пользователя">
+                    </picture>
+                    <div class="gallery__item-box">
+                        <div class="gallery__item-text">
+                            <div class="gallery__item-wrap">
+                                <p class="item-name">Антон</p>
+                                <p class="item-time">(12 часов назад)</p>
+                            </div>
+                            <div class="item-like-box"><a class="item-like-img" href="#"><span
+                                        class="visually-hidden">сердечко</span></a> <a class="item-like-text"
+                                    href="#">Нравится: 666</a></div>
+                            <p class="item-text">Соседи будут рады!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1200px)"
+                            srcset="./img/webp/photo-3-desktop.webp, ./img/webp/photo-3-desktop-jpg@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)"
+                            srcset="./img/webp/photo-3-tablet.webp, ./img/webp/photo-3-tablet@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="./img/webp/photo-3-mobile.webp, ./img/webp/photo-3-mobile@2x.webp 2x">
+                        <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg, photo-3-tablet@2x.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg, photo-3-tablet@2x.jpg"><img
+                            class="gallery__item-img" src="/img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg"
+                            width="280" height="180" alt="Фотография пользователя">
+                    </picture>
+                    <div class="gallery__item-box">
+                        <div class="gallery__item-text">
+                            <div class="gallery__item-wrap">
+                                <p class="item-name">Борис</p>
+                                <p class="item-time">(20 часов назад)</p>
+                            </div>
+                            <div class="item-like-box"><a class="item-like-img" href="#"><span
+                                        class="visually-hidden">сердечко</span></a> <a class="item-like-text"
+                                    href="#">Нравится 215</a></div>
+                            <p class="item-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1200px)"
+                            srcset="./img/webp/photo-4-desktop.webp, ./img/webp/photo-4-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)"
+                            srcset="./img/webp/photo-4-tablet.webp, ./img/webp/photo-4-tablet@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="./img/webp/photo-4-mobile.webp, ./img/webp/photo-4-mobile@2x.webp 2x">
+                        <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg, photo-4-desktop@2x.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg, photo-4-tablet@2x.jpg"><img
+                            class="gallery__item-img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg"
+                            width="280" height="180" alt="Фотография пользователя">
+                    </picture>
+                    <div class="gallery__item-box">
+                        <div class="gallery__item-text">
+                            <div class="gallery__item-wrap">
+                                <p class="item-name">Сергей</p>
+                                <p class="item-time">(25 часов назад)</p>
+                            </div>
+                            <div class="item-like-box"><a class="item-like-img" href="#"><span
+                                        class="visually-hidden">сердечко</span></a> <a class="item-like-text"
+                                    href="#">Нравится 4</a></div>
+                            <p class="item-text">Самая кубанская в мире!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1200px)"
+                            srcset="./img/webp/photo-5-desktop.webp, ./img/webp/photo-5-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)"
+                            srcset="./img/webp/photo-5-tablet.webp, ./img/webp/photo-5-tablet@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="./img/webp/photo-5-mobile.webp, ./img/webp/photo-5-mobile@2x.webp 2x">
+                        <source media="(min-width: 1200px)" srcset="img/photo-5-tablet.jpg, photo-5-desktop@2x.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg, photo-5-tablet@2x.jpg"><img
+                            class="gallery__item-img" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg"
+                            width="280" height="180" alt="Фотография пользователя">
+                    </picture>
+                    <div class="gallery__item-box">
+                        <div class="gallery__item-text">
+                            <div class="gallery__item-wrap">
+                                <p class="item-name">Максим</p>
+                                <p class="item-time">(40 часов назад)</p>
+                            </div>
+                            <div class="item-like-box"><a class="item-like-img" href="#"><span
+                                        class="visually-hidden">сердечко</span></a> <a class="item-like-text"
+                                    href="#">Нравится 150</a></div>
+                            <p class="item-text">Где снег-то?</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="gallery__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1200px)"
+                            srcset="./img/webp/photo-6-desktop.webp, ./img/webp/photo-6-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)"
+                            srcset="./img/webp/photo-6-tablet.webp, ./img/webp/photo-6-tablet@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="./img/webp/photo-6-mobile.webp, ./img/webp/photo-6-mobile@2x.webp 2x">
+                        <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg, photo-6-desktop@2x.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg, photo-6-tablet@2x.jpg"><img
+                            class="gallery__item-img" src="img/photo-6-mobile.jpg" srcset="photo-6-mobile@2x.jpg"
+                            width="280" height="180" alt="Фотография пользователя">
+                    </picture>
+                    <div class="gallery__item-box">
+                        <div class="gallery__item-text">
+                            <div class="gallery__item-wrap">
+                                <p class="item-name">Надеждa</p>
+                                <p class="item-time">(45 часов назад)</p>
+                            </div>
+                            <div class="item-like-box"><a class="item-like-img" href="#"><span
+                                        class="visually-hidden">сердечко</span></a> <a class="item-like-text"
+                                    href="#">Нравится 2560</a></div>
+                            <p class="item-text">Всем GM и взаимные лайки!</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="gallery__container-bottom">
+                <p class="gallery__container-text gallery__container-text--bottom">Затмите их всех!</p>
+                <p class="gallery__container-text gallery__container-text--bottom">Выкладывайте все, что накопилось в
+                    телефоне!</p>
+            </div>
+        </section>
+        <section class="post">
+            <div class="post__wrap">
+                <div class="post__container-img">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1200px)"
+                            srcset="./img/webp/photo-7-desktop.webp, ./img/webp/photo-7-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 660px)"
+                            srcset="./img/webp/photo-7-tablet.webp, ./img/webp/photo-7-tablet@2x.webp 2x">
+                        <source type="image/webp"
+                            srcset="./img/webp/photo-7-mobile.webp, ./img/webp/photo-7-mobile@2x.webp 2x">
+                        <source media="(min-width: 1200px)"
+                            srcset="img/photo-7-desktop.jpg, img/photo-7-desktop@2x.jpg">
+                        <source media="(min-width: 660px)" srcset="img/photo-7-tablet.jpg, img/photo-7-tablet@2x.jpg">
+                        <img class="post__img" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg"
+                            width="280" height="374" alt="редактирование фотографии">
+                    </picture>
+                </div>
+                <div class="post__container-filter">
+                    <form action="https://echo.htmlacademy.ru" method="post"></form>
+                    <ul class="post__filter-list">
+                        <li class="post__filter post__filter-one"><a class="post__link" href="#"><span
+                                    class="visually-hidden">Обрезка</span> <svg class="post-icon post-icon-crop">
+                                    <use xlink:href="./img/sprite.svg#crop"></use>
+                                </svg></a>
+                            <div class="form-post__range range">
+                                <div class="range__scale"></div><a class="range__link" href="#">
+                                    <div class="range__haddle"></div>
+                                </a>
+                            </div>
+                            <div class="edit__line"></div>
+                        </li>
+                        <li class="post__filter post__filter-two"><a class="post__link" href="#"><span
+                                    class="visually-hidden">Цвет</span> <svg class="post-icon post-icon-fills">
+                                    <use xlink:href="./img/sprite.svg#fills"></use>
+                                </svg></a>
+                            <div class="form-post__range range">
+                                <div class="range__scale"></div><a class="range__link" href="#">
+                                    <div class="range__haddle"></div>
+                                </a>
+                            </div>
+                            <div class="edit__line"></div>
+                        </li>
+                        <li class="post__filter post__filter-three"><a class="post__link" href="#"><span
+                                    class="visually-hidden">Контраст</span> <svg class="post-icon post-icon-contrasts">
+                                    <use xlink:href="./img/sprite.svg#contrasts"></use>
+                                </svg></a>
+                            <div class="form-post__range range">
+                                <div class="range__scale"></div><a class="range__link" href="#">
+                                    <div class="range__haddle" style="left: 10%;"></div>
+                                </a>
+                            </div>
+                            <div class="edit__line"></div>
+                        </li>
+                    </ul>
+                    <div class="post__button-wrap"><button class="post__button post__button-publish"
+                            type="submit">Запостить</button> <button class="post__button post__button-cancel"
+                            type="submit">Отмена</button></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__social">
+            <div class="page-footer__container-social"><a class="page-footer__logo" href="#">
+                    <picture>
+                        <source media="(min-width: 960px)" srcset="img/logotype-blue-desktop.svg"><img
+                            class="page-footer__logo-img" src="img/logotype-blue-tablet.svg" width="147" height="40"
+                            alt="Логотип сайта Пинк">
+                    </picture>
+                </a>
+                <div class="page-footer__icon-social-wrapper">
+                    <ul class="icon-social">
+                        <li class="icon-social__icon-item"><a class="social-button" href="#"><span
+                                    class="visually-hidden">Твиттер</span> <svg
+                                    class="social-button-icon social-button-icon--twitter">
+                                    <use xlink:href="./img/sprite.svg#twitter"></use>
+                                </svg></a></li>
+                        <li class="icon-social__icon-item"><a class="social-button" href="#"><span
+                                    class="visually-hidden">Фейсбук</span> <svg
+                                    class="social-button-icon social-button-icon--fb">
+                                    <use xlink:href="./img/sprite.svg#fb"></use>
+                                </svg></a></li>
+                        <li class="icon-social__icon-item"><a class="social-button" href="#"><span
+                                    class="visually-hidden">Ютюб</span> <svg
+                                    class="social-button-icon social-button-icon--youtube">
+                                    <use xlink:href="./img/sprite.svg#youtube"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="copyright"><a class="copyright__text"
+                        href="https://htmlacademy.ru/intensive/adaptive">Разработано</a> <a class="copyright__link"
+                        href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Логотип Эйч ти эм
+                            эл академии</span> <svg class="copyright__link-logo" width="27" height="34">
+                            <use xlink:href="./img/sprite.svg#copyright"></use>
+                        </svg></a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/vendor/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

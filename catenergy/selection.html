@@ -8,7 +8,9 @@
     <link rel="preload" href="./fonts/oswald-v31-latin_cyrillic-regular.woff" as="font">
     <link rel="preload" href="./fonts/oswald-v31-latin_cyrillic-regular.woff2" as="font">
     <title>Кэт энерджи</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>document.createElement("picture");</script>
+    <script src="./js/vendor/picturefill.js" async=""></script>
 </head>
 
 <body class="selection">
@@ -28,7 +30,8 @@
                         <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог продукции</a>
                         </li>
                         <li class="site-list__item site-list__item--active"><a class="site-list__link" href="#">Подбор
-                                программы</a></li>
+                                программы</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -83,7 +86,8 @@
                 <section class="contact">
                     <div class="contact__form green-borded">
                         <h2 class="green-borded__title"><span class="green-borded__text">Контактные данные (владельца
-                                кота)</span></h2>
+                                кота)</span>
+                        </h2>
                     </div>
                     <ul class="contact__list">
                         <li class="contact__item complex-input"><label class="complex-input__label"
@@ -138,7 +142,8 @@
                             </ul>
                         </fieldset>
                         <div class="offers__bottom"><button class="offers__selection-button button"
-                                type="submit">Отправить заявку</button>
+                                type="submit">Отправить
+                                заявку</button>
                             <p class="offers__necessary">* — Обязательные поля</p>
                         </div>
                     </div>
@@ -180,7 +185,8 @@
                     </ul>
                 </div>
                 <div class="copyright"><a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML
-                        Academy </a><a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span
+                        Academy
+                    </a><a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span
                             class="visually-hidden">Логотип Эйч ти эм эл акдемии</span> <svg
                             class="copyright__link-logo" width="27" height="34">
                             <use xlink:href="./img/sprite.svg#copyright"></use>
@@ -188,9 +194,9 @@
             </div>
         </div>
     </footer>
-    <script src="svg4everybody.js"></script>
+    <script src="./js/vendor/svg4everybody.js"></script>
     <script>svg4everybody();</script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
