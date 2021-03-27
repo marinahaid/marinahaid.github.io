@@ -46,6 +46,7 @@ body {
     width: 100%;
     background-color: gray;
     background-image: url(../img/fon.png);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     left: 0;
