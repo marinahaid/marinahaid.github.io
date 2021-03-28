@@ -43,20 +43,22 @@ body {
     font-weight: 400;
     color: #fff;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-color: rgb(230, 224, 224);
-   background-image: url(img/fon.jpg);
-    background-repeat: repeat;
+    /*background-image: url(img/fon.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: top center;*/
+    background: url(img/fon.jpg) no-repeat center center fixed;
+    background-size: cover;
     left: 0;
-    /*display: grid;
-    min-height: 100vh;
-    grid-template-rows: 200px 1fr 100px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
+}
+
+main {
+    flex: 1 1 auto;
 }
 
 *, ::after, ::before {
@@ -552,8 +554,7 @@ a {
 .page-footer {
     width: 100%;
     background-color: rgba(227, 18, 18, .8);
-    -ms-flex-item-align: end;
-    align-self: end;
+    flex: 1 0 auto;
 }
 
 .page-footer__logo-img {
@@ -610,7 +611,7 @@ a {
 }
 
 .about-me__wrap {
-    padding-bottom: 70px;
+    padding: 70px 0 70px 0;
 }
 
 .about-me__box {
