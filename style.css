@@ -54,10 +54,6 @@ body {
     background-size: cover;
 }
 
-main {
-    flex: 1 0 auto;
-}
-
 *, ::after, ::before {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
@@ -917,10 +913,9 @@ a {
 
 @media (max-width:767px) {
     .contacts__wrap {
-        width: 90%;
-        min-height: 300px;
         background-image: url(img/img-contacts-mob.jpg);
         padding-left: 0;
+        padding-top: 40px;
     }
     .contacts__social {
         margin: 0 auto;
@@ -1013,6 +1008,6 @@ a {
         transform: translateX(-52px);
         left: 50%;
         margin-left: 0;
-        padding-top: 30px;
+        padding-top: 95px;
     }
 }
