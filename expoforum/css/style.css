@@ -2,58 +2,58 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    src: local(""), url(../fonts/Montserrat-Regular.woff2) format("woff2"), url(../fonts/Montserrat-Regular.woff) format("woff");
+    src: local(""), url(../fonts/Montserrat-Regular.woff2) format("woff2"), url(../fonts/Montserrat-Regular.woff) format("woff")
 }
 
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
-    src: local(""), url(../fonts/Montserrat-Medium.woff2) format("woff2"), url(../fonts/Montserrat-Medium.woff) format("woff");
+    src: local(""), url(../fonts/Montserrat-Medium.woff2) format("woff2"), url(../fonts/Montserrat-Medium.woff) format("woff")
 }
 
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    src: local(""), url(../fonts/Montserrat-SemiBold.woff2) format("woff2"), url(../fonts/Montserrat-SemiBold.woff) format("woff");
+    src: local(""), url(../fonts/Montserrat-SemiBold.woff2) format("woff2"), url(../fonts/Montserrat-SemiBold.woff) format("woff")
 }
 
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
-    src: local(""), url(../fonts/Montserrat-Bold.woff2) format("woff2"), url(../fonts/Montserrat-Bold.woff) format("woff");
+    src: local(""), url(../fonts/Montserrat-Bold.woff2) format("woff2"), url(../fonts/Montserrat-Bold.woff) format("woff")
 }
 
 html {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 *, ::after, ::before {
     -webkit-box-sizing: inherit;
-    box-sizing: inherit;
+    box-sizing: inherit
 }
 
 body {
-    width: 100%;
+    min-width: 1920px;
     margin: 0 auto;
     font-family: "Montserrat", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: #fff
 }
 
 .list-reset {
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none
 }
 
 .img {
     min-width: 100%;
-    height: auto;
+    height: auto
 }
 
 .visually-hidden {
@@ -67,7 +67,7 @@ body {
     -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
+    overflow: hidden
 }
 
 .button {
@@ -76,24 +76,24 @@ body {
     text-align: center;
     border: 0;
     outline: 0;
-    display: block;
+    display: block
 }
 
 .button:focus, .button:hover {
     opacity: .3;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .button:active {
-    opacity: 0.3;
+    opacity: .3
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none
 }
 
 .title {
-    font-weight: 500;
+    font-weight: 500
 }
 
 .page-header {
@@ -101,49 +101,52 @@ a {
     margin: 0 auto;
     z-index: 3;
     position: relative;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fff
+}
+
+.page-header__logo, .page-header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .page-header__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    margin: 0 auto;
     padding-bottom: 7px;
-    padding-top: 6px;
+    padding-top: 6px
 }
 
 .page-header__logo {
     width: 175px;
-    height: 24px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 24px
 }
 
 .page-header__logo:focus, .page-header__logo:hover {
-    opacity: 0.8;
+    opacity: .8
 }
 
 .page-header__logo:active {
-    opacity: 0.6;
+    opacity: .6
 }
 
 .main-nav {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
+    width: 1565px;
+    margin: 0 auto
 }
 
 .main-nav, .main-nav__icons a, .site-list a {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
 }
 
 .main-nav__global {
-    padding-left: 70px;
+    padding-left: 70px
 }
 
 .main-nav__global, .main-nav__global a, .main-nav__icons {
@@ -155,17 +158,17 @@ a {
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center
 }
 
 .main-nav__icons {
-    padding-left: 322px;
+    padding-left: 322px
 }
 
 .main-nav__lang {
     display: block;
     padding-top: 5px;
-    margin-left: 10px;
+    margin-left: 10px
 }
 
 .main-nav__list {
@@ -174,26 +177,26 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding-left: 267px;
+    padding-left: 267px
 }
 
 .main-nav__icons a, .site-list a {
     font-size: 14px;
     line-height: 21px;
-    color: #fff;
+    color: #fff
 }
 
 .main-nav__icons a:focus, .main-nav__icons a:hover, .site-list a:focus, .site-list a:hover {
-    opacity: 0.6;
+    opacity: .6
 }
 
 .main-nav__icons a:active, .site-list a:active {
-    opacity: 0.3;
+    opacity: .3
 }
 
 .site-list li {
     padding-top: 9px;
-    margin-left: 44px;
+    margin-left: 44px
 }
 
 .details::before, .top {
@@ -201,7 +204,7 @@ a {
     background-size: cover;
     background-position: top center;
     left: 0;
-    display: block;
+    display: block
 }
 
 .top {
@@ -211,29 +214,27 @@ a {
     top: -112px;
     min-height: 823px;
     background-color: #fff;
-    background-image: url(../img/header-img.jpg);
+    background-image: url(../img/header-img.jpg)
 }
 
 .top__container, .top__right ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
 }
 
 .top__container {
     margin: 0 auto;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 295px 223px 0;
+    padding: 295px 225px 0;
+    position: relative
 }
 
 .top__container a {
-    color: #fff;
+    color: #fff
 }
 
 .top__left {
-    max-width: 420px;
+    max-width: 420px
 }
 
 .top__left h1 {
@@ -242,7 +243,7 @@ a {
     font-weight: 700;
     color: #fff;
     margin: 0 0 10px;
-    letter-spacing: -2.6px;
+    letter-spacing: -2.6px
 }
 
 .top__left p {
@@ -250,17 +251,17 @@ a {
     line-height: 33.6px;
     color: #fff;
     margin: 0;
-    padding: 0 30px 22px 0;
+    padding: 0 30px 22px 0
 }
 
 .top__left span {
     font-size: 14px;
     line-height: 33.6px;
-    color: #fff;
+    color: #fff
 }
 
 .top-icon {
-    padding: 8px 0 0 10px;
+    padding: 8px 0 0 10px
 }
 
 .top__right ul {
@@ -269,14 +270,14 @@ a {
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .top__right-title {
     font-size: 18px;
     line-height: 27.3px;
     color: #fff;
-    padding-bottom: 15px;
+    padding-bottom: 15px
 }
 
 .details::before {
@@ -286,32 +287,32 @@ a {
 
 .top__right {
     padding-top: 121px;
-    padding-left: 158px;
+    padding-left: 158px
 }
 
 .top__right li {
     margin-bottom: 30px;
-    padding-right: 30px;
+    padding-right: 30px
 }
 
 .top__right li:nth-child(2), .top__right li:nth-child(4) {
-    padding-right: 0;
+    padding-right: 0
 }
 
 .top__right--one a {
-    background-color: #2378fc;
+    background-color: #2378fc
 }
 
 .top__right--two a {
-    background-color: #30bcc9;
+    background-color: #30bcc9
 }
 
 .top__right--three a {
-    background-color: #ffc41e;
+    background-color: #ffc41e
 }
 
 .top__right--four a {
-    background-color: #f6404f;
+    background-color: #f6404f
 }
 
 .top__right a {
@@ -323,22 +324,22 @@ a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .details {
-    font-size: 10px;
+    font-size: 10px
 }
 
 .offers {
     width: 100%;
     background-color: #2378fc;
-    margin-top: -111px;
+    margin-top: -111px
 }
 
 .offers__box, .offers__container {
     padding: 0 223px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .offers__box {
@@ -347,58 +348,57 @@ a {
     display: flex;
     padding: 50px 0 62px;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: wrap
 }
 
 .offers__box h3 {
     font-size: 27px;
     font-weight: 500;
     line-height: 36px;
-    letter-spacing: -0.8px;
+    letter-spacing: -.8px
 }
 
 .offers__box a {
     display: block;
     color: #fff;
     font-size: 12px;
-    line-height: 25px;
+    line-height: 25px
 }
 
 .offers__box a:active, .offers__box a:hover, .page-footer__wrapper a:active, .page-footer__wrapper a:hover {
     color: #ffc41e;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .offers__box-one {
     width: 210px;
-    margin-right: 122px;
+    margin-right: 122px
 }
 
 .offers__box-two {
     width: 188px;
-    margin-right: 121px;
+    margin-right: 121px
 }
 
 .offers__box-three {
     width: 186px;
-    margin-right: 120px;
+    margin-right: 120px
 }
 
 .offers__box-four {
     width: 167px;
-    margin-right: 0;
+    margin-right: 0
 }
 
 .offers__box li {
-    padding-bottom: 12px;
+    padding-bottom: 12px
 }
 
 .page-footer {
     width: 100%;
     background-color: #30bcc9;
     padding-top: 40px;
-    padding-bottom: 58px;
+    padding-bottom: 58px
 }
 
 .page-footer__wrapper {
@@ -408,92 +408,92 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .page-footer__wrapper h3 {
     font-size: 21px;
     line-height: 27px;
-    letter-spacing: -0.6px;
+    letter-spacing: -.6px
 }
 
 .page-footer__wrapper a {
     color: #fff;
     font-size: 10px;
     display: block;
-    letter-spacing: 0.9px;
+    letter-spacing: .9px
 }
 
 .page-footer__wrapper li {
-    padding-bottom: 16px;
+    padding-bottom: 16px
 }
 
 .page-footer__one {
     max-width: 197px;
-    margin-right: 94px;
+    margin-right: 94px
 }
 
 .page-footer__two {
     max-width: 163px;
-    margin-right: 126px;
+    margin-right: 126px
 }
 
 .page-footer__three {
     max-width: 161px;
-    margin-right: 126px;
+    margin-right: 126px
 }
 
 .page-footer__four {
-    max-width: 255px;
+    max-width: 255px
 }
 
 .page-footer__organizers {
-    padding-top: 9px;
+    padding-top: 9px
 }
 
 .page-footer__app, .page-footer__visitor {
-    padding-top: 8px;
+    padding-top: 8px
 }
 
 .page-footer__app li {
-    padding-bottom: 7px;
+    padding-bottom: 7px
 }
 
 .page-footer__contacts {
-    padding-bottom: 10px;
+    padding-bottom: 10px
 }
 
 .page-footer__subscription h3 {
     margin: 0;
     padding-top: 20px;
-    padding-bottom: 18px;
+    padding-bottom: 18px
 }
 
 .page-footer__subscription a {
-    line-height: 18px;
+    line-height: 18px
 }
 
 .page-footer__subscription li {
     padding-right: 20px;
     line-height: 17px;
-    padding-bottom: 24px;
+    padding-bottom: 24px
 }
 
 .form__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
 }
 
 .form__item input {
     padding: 12px 27px 12px 16px;
-    border: 0;
+    border: 0
 }
 
 .form__button {
     background-color: #f6404f;
     width: 40px;
-    height: 40px;
+    height: 40px
 }
 
 .icon-social {
@@ -511,50 +511,49 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 10px
 }
 
 .social-button-icon {
-    color: #fff;
+    color: #fff
 }
 
 .social-button-icon:active, .social-button-icon:focus, .social-button-icon:hover {
-    opacity: 0.5;
+    opacity: .5
 }
 
 .container {
-    width: 100%;
-    max-width: 1560px;
     margin: 0 auto;
+    width: 1565px
 }
 
 .events {
     width: 100%;
     background-color: #ffc41e;
-    padding-bottom: 68px;
+    padding-bottom: 68px
 }
 
 .events__container {
     margin: 0 auto;
-    padding: 56px 223px 0;
+    padding: 56px 223px 0
 }
 
 .events__bottom, .events__top {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
 }
 
 .events__top {
     color: #2e373b;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .events__top h2 {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 28px
 }
 
 .events__top a {
@@ -562,7 +561,7 @@ a {
     display: block;
     font-size: 24px;
     color: #373b3d;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .events__link::after {
@@ -571,51 +570,51 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: block;
+    display: block
 }
 
 .events__bottom {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding-top: 28px;
+    padding-top: 28px
 }
 
 .events__bottom li {
     width: 350px;
-    padding: 0 15px;
+    padding: 0 15px
 }
 
 .events__bottom-image {
     width: 100%;
     display: block;
-    margin-bottom: 13px;
+    margin-bottom: 13px
 }
 
 .events__bottom span, .events__text, .events__text-data {
-    color: #373b3d;
+    color: #373b3d
 }
 
 .events__text-data {
-    font-size: 12px;
+    font-size: 12px
 }
 
 .events__text-name {
-    font-size: 14px;
+    font-size: 14px
 }
 
 .events__title {
     font-size: 18px;
     line-height: 18px;
-    color: #f6404f;
+    color: #f6404f
 }
 
 .news {
     padding: 73px 0 23px;
-    background-color: #faf3e3;
+    background-color: #faf3e3
 }
 
 .news__right {
-    width: 542px;
+    width: 542px
 }
 
 .news__left {
@@ -623,46 +622,46 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding-right: 127px;
+    padding-right: 127px
 }
 
 .news__container, .news__left, .news__link, .news__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
 }
 
 .news__container {
     padding: 0 223px;
     margin: 0 auto;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .news__left a {
     display: block;
-    padding-bottom: 57px;
+    padding-bottom: 57px
 }
 
 .news__link, .news__wrap {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .news__wrap {
-    color: #2e373b;
+    color: #2e373b
 }
 
 .news__wrap a {
     color: #2e373b;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .news__link {
     width: 156px;
     font-size: 17px;
-    padding-top: 10px;
+    padding-top: 10px
 }
 
 .news-one {
@@ -670,19 +669,19 @@ a {
     line-height: 21px;
     color: #f6404f;
     padding-bottom: 14px;
-    padding-top: 15px;
+    padding-top: 15px
 }
 
 .news-two {
     color: #2e373b;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 27px
 }
 
 .news__right-list div, .news__right-list li {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
 }
 
 .news__right-list div {
@@ -690,7 +689,7 @@ a {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .news__wrap h3 {
@@ -698,16 +697,16 @@ a {
     margin: 0;
     width: 150px;
     padding-top: 5px;
-    padding-bottom: 34px;
+    padding-bottom: 34px
 }
 
 .news__right-list li {
     padding-bottom: 25px;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .news__right-list a {
     display: block;
-    padding-right: 30px;
+    padding-right: 30px
 }

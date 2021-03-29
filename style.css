@@ -43,13 +43,16 @@ body {
     font-weight: 400;
     color: #fff;
     width: 100%;
+    min-height: 400px;
     background-color: rgb(230, 224, 224);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url(img/fon.jpg) no-repeat center center fixed;
+    background-image: url("./img/fon.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-  }
+}
 
 main {
     flex: 1 0 auto;
@@ -109,7 +112,7 @@ a {
     width: 100%;
     z-index: 3;
     position: relative;
-    background-color: rgba(227, 18, 18, .8);
+    background-color: rgba(227, 18, 18, .7);
     padding-bottom: 18px;
     -ms-flex-item-align: start;
     align-self: start;
@@ -547,8 +550,7 @@ a {
 
 .page-footer {
     width: 100%;
-    background-color: rgba(227, 18, 18, .8);
-    flex: 1 0 auto;
+    background-color: rgba(227, 18, 18, .7);
 }
 
 .page-footer__logo-img {
@@ -945,12 +947,11 @@ a {
 
 .main-page {
     width: 100%;
-    margin-bottom: 80px;
 }
 
 .main-page__box {
     width: 800px;
-    min-height: 400px;
+    height: 400px;
     background-image: url(img/img-index.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -978,7 +979,7 @@ a {
 @media (max-width:1160px) {
     .main-page__box {
         width: 700px;
-        min-height: 300px;
+        height: 300px;
         margin: 70px auto;
     }
     .main-page__text {
@@ -992,9 +993,13 @@ a {
 }
 
 @media (max-width:767px) {
+    .page-main {
+        margin-bottom: 100px;
+    }
     .main-page__box {
         width: 90%;
-        background-image: url(img/img-index-mob.jpg)
+        min-height: 400px;
+        background-image: url(img/img-index-mob.jpg);
     }
     .main-page__box p {
         font-size: 14px;
