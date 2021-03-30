@@ -31,6 +31,11 @@ html {
     box-sizing: border-box
 }
 
+body, html {
+    height: 100%;
+    position: relative;
+  }
+
 *, ::after, ::before {
     -webkit-box-sizing: inherit;
     box-sizing: inherit
