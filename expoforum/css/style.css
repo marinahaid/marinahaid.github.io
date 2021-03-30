@@ -199,12 +199,20 @@ a {
     margin-left: 44px
 }
 
-.details::before, .top {
+.details {
+    width: 90px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.top .details::before {
+    content: "";
+    background-image: url(../img/arrow1.svg);
+    width: 20px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    left: 0;
-    display: block
+    margin-top: 2px;
 }
 
 .top {
@@ -261,7 +269,7 @@ a {
 }
 
 .top-icon {
-    padding: 8px 0 0 10px
+    padding: 11px 0 0 10px
 }
 
 .top__right ul {
@@ -278,11 +286,6 @@ a {
     line-height: 27.3px;
     color: #fff;
     padding-bottom: 15px
-}
-
-.details::before {
-    content: "";
-    background-image: url(../img/arrow1.svg)
 }
 
 .top__right {
@@ -325,10 +328,6 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
-}
-
-.details {
-    font-size: 10px
 }
 
 .offers {
