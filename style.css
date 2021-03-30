@@ -49,7 +49,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-image: url("./img/fon.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
 }
