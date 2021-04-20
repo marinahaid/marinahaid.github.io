@@ -943,6 +943,7 @@ a {
 
 .main-page {
     width: 100%;
+    margin-bottom: 70px;
 }
 
 .main-page__box {
@@ -953,9 +954,10 @@ a {
     background-size: cover;
     background-position: top center;
     left: 0;
-    margin: 80px auto 0;
+    margin: 80px auto 70px;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+   
 }
 
 .main-page__text {
@@ -996,6 +998,7 @@ a {
         width: 90%;
         min-height: 400px;
         background-image: url(img/img-index-mob.jpg);
+        margin: 70px auto;
     }
     .main-page__box p {
         font-size: 14px;
