@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Грузоперевозки</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="form">
+            <div class="form__container container">
+                <h1>FTL: Прямая машина</h1>
+                <form action="https://echo.htmlacademy.ru" method="post" id="form" class="form__body">
+                    <section class="form__route section">
+                        <h2 class="title-small">Маршрут</h2>
+                        <div class="form__list from__route-list">
+                            <div class="form__item form__route-item"><label for="wherefrom">Откуда</label> <input
+                                    id="wherefrom" type="text" name="name" required=""></div>
+                            <div class="form__item form__route-item"><label for="whereto">Куда</label> <input
+                                    id="whereto" type="text" name="name" required=""> <button
+                                    class="form__item-button"><span class="visually-hidden">Вставить
+                                        адрес</span></button></div>
+                        </div>
+                    </section>
+                    <section class="form__transport section">
+                        <h2 class="title-small">Транспорт</h2>
+                        <div class="form__list form__transport-list">
+                            <div class="form__item form__transport-item">
+                                <p>Грузоподъемность</p>
+                                <div class="form__transport-dropdown dropdown1"><button onclick="myFunction1()"
+                                        type="button" class="form__transport-dropbtn dropbtn1"><span>Не
+                                            выбрана</span><svg class="form__transport-arrow" width="8" height="5">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg></button>
+                                    <div id="myDropdown1" class="form__transport-content content1"><a href="#">Вариант
+                                            1</a> <a href="#">Вариант 2</a> <a href="#">Вариант 3</a> <a
+                                            href="#">Вариант 4</a> <a href="#">Вариант 5</a></div>
+                                </div>
+                            </div>
+                            <div class="form__item form__transport-item">
+                                <p>Способ погрузки</p>
+                                <div class="form__transport-dropdown dropdown2"><button onclick="myFunction2()"
+                                        type="button" class="form__transport-dropbtn dropbtn2"><span>Задняя</span><svg
+                                            class="form__transport-arrow" width="8" height="5">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg></button>
+                                    <div id="myDropdown2" class="form__transport-content content2"><a
+                                            href="#">Верхняя</a> <a href="#">Боковая</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="form__cargo section">
+                        <h2 class="title-small">Груз</h2>
+                        <div class="form__list form__cargo-list">
+                            <div class="form__item form__cargo-item">
+                                <p>Тип груза</p>
+                                <div class="form__cargo-dropdown dropdown4"><button onclick="myFunction4()"
+                                        type="button" class="form__cargo-dropbtn dropbtn4"><span>Не выбран</span><svg
+                                            class="form__cargo-arrow" width="8" height="5">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg></button>
+                                    <div id="myDropdown4" class="form__cargo-content content4"><a href="#">Вариант 1</a>
+                                        <a href="#">Вариант 2</a></div>
+                                </div>
+                            </div>
+                            <div class="form__item form__cargo-item">
+                                <p>Класс опасности</p>
+                                <div class="form__cargo-dropdown dropdown5"><button onclick="myFunction5()"
+                                        type="button" class="form__cargo-dropbtn dropbtn5"><span>Класс 5-</span><svg
+                                            class="form__cargo-arrow" width="8" height="5">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg></button>
+                                    <div id="myDropdown5" class="form__cargo-content content5"><a href="#">Вариант 1</a>
+                                        <a href="#">Вариант 2</a></div>
+                                </div>
+                            </div>
+                            <div class="form__item form__cargo-item">
+                                <p>Объявленная ценность, ₽</p>
+                                <div class="form__cargo-dropdown dropdown6"><button onclick="myFunction6()"
+                                        type="button" class="form__cargo-dropbtn dropbtn6"><span>≥ 1</span><svg
+                                            class="form__cargo-arrow" width="8" height="5">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg></button>
+                                    <div id="myDropdown6" class="form__cargo-content content6"><a href="#">Вариант 1</a>
+                                        <a href="#">Вариант 2</a></div>
+                                </div>
+                            </div>
+                            <div class="form__item form__cargo-item">
+                                <div class="checkbox dropdown3"><input id="formagreement" checked="" type="checkbox"
+                                        name="agreement" class="visually-hidden"> <label for="formagreement"
+                                        class="checkbox__arrow dropbtn3" onclick="myFunction3()"><span>Требуется
+                                            температурный режим</span></label>
+                                    <div id="myDropdown3" class="form__temperature-content content3">
+                                        <div class="form__temperature-list">
+                                            <div class="form__item form__temperature-item"><label
+                                                    for="temperaturestart">От, ℃</label> <input id="temperaturestart"
+                                                    type="text" name="name" placeholder="-20"></div>
+                                            <div class="form__item form__temperature-item"><label
+                                                    for="temperatureend">До, ℃</label> <input id="temperatureend"
+                                                    type="text" name="name" placeholder="+23"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="form__time section">
+                        <div class="form__time-box dropdown"><button onclick="myFunction()" type="button"
+                                class="title-small dropbtn">Время<svg class="form__time-arrow" width="8" height="5">
+                                    <use xlink:href="./img/sprite.svg#btn-arrow"></use>
+                                </svg></button>
+                            <div class="form__time-wrap">
+                                <p class="form__time-arrival">Когда прибыть на точку</p>
+                                <p class="form__time-plan">700 км в день</p>
+                            </div>
+                            <div id="myDropdown" class="form__time-list dropdown-content"><a href="#"><span
+                                        class="form__time-uninsert">Адрес не указан</span><span
+                                        class="form__time-insert">Не выбрано</span></a> <a href="#"
+                                    class="disable"><span class="form__time-uninsert">Адрес не указан</span><span
+                                        class="form__time-insert">Не выбрано</span></a></div>
+                            <div class="form__item form__time-item"><label class="form__item-letter"
+                                    for="adress-letter">Комментарии к заказу</label> <textarea class="form__time-text"
+                                    id="adress-letter" name="text"
+                                    placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+                            </div>
+                        </div>
+                    </section>
+                </form>
+                <div class="form__info">
+                    <p>Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

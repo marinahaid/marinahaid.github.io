@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Квартира</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main>
+        <section class="flat">
+            <div class="container"><button class="flat__toggle" type="button"><span class="visually-hidden">Закрыть
+                        меню</span></button>
+                <h1 class="visually-hidden">Двухкомнатная квартира</h1>
+                <div class="flat__wrapper">
+                    <div class="flat__img">
+                        <picture><img src="./img/flat.png" srcset="./img/flat2.png 2x"
+                                alt="Схема двухкомнатной квартиры" width="86" height="160"></picture>
+                    </div>
+                    <div class="flat__description">
+                        <h3>2-к квартира</h3>
+                        <ul class="flat__list list-reset">
+                            <li class="flat__item-one">
+                                <p class="text-light">Этаж</p>
+                                <p class="text-dark">3 из 19</p>
+                            </li>
+                            <li class="flat__item-two">
+                                <p class="text-light">Высота потолков</p>
+                                <p class="text-dark">3,2 м</p>
+                            </li>
+                            <li class="flat__item-three">
+                                <p class="text-light">Отделка</p>
+                                <p class="text-dark">Предчистовая</p>
+                            </li>
+                            <li class="flat__item-four">
+                                <p class="text-light">Общая площадь</p>
+                                <p class="text-dark">32,24 м²</p>
+                            </li>
+                            <li class="flat__item-five">
+                                <p class="text-light">Жилая площадь</p>
+                                <p class="text-dark">22,24 м²</p>
+                            </li>
+                            <li class="flat__item-six">
+                                <p class="text-light">Площадь кухни</p>
+                                <p class="text-dark">14,24 м²</p>
+                            </li>
+                        </ul>
+                        <div class="flat__status"><a href="#" class="flat__status-yes"><svg class="arraw" width="20"
+                                    height="20">
+                                    <use xlink:href="./img/sprite.svg#check"></use>
+                                </svg> <span>Вы были на просмотре</span> </a><a href="#" class="flat__status-no"><svg
+                                    class="cross" width="20" height="20">
+                                    <use xlink:href="./img/sprite.svg#cross"></use>
+                                </svg> <span>Дом аккредитован другим банком</span></a></div>
+                    </div>
+                    <div class="flat__price">
+                        <div class="flat__top">
+                            <p>Ваша цена по брони до</p><time>19 сентября</time>
+                        </div>
+                        <p class="flat__number">3 312 666 Р</p>
+                        <div class="flat__text">
+                            <p>Текущая цена у застройщика</p>
+                            <p><span>дороже на</span> <span class="flat__text-price">324 825 Р</span></p>
+                        </div><a href="#" class="btn"><svg width="20" height="20">
+                                <use xlink:href="./img/sprite.svg#seach"></use>
+                            </svg><span>Выбрать для покупки</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
