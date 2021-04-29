@@ -383,6 +383,10 @@ h2 {
     display: none
 }
 
+.arrow {
+    padding-top: 5px;
+}
+
 .checkbox__arrow {
     display: -webkit-box;
     display: -ms-flexbox;
